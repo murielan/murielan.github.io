@@ -60,7 +60,7 @@ p {
 
 footer {
     text-align: center;
-    padding: 1em 20px;
+    padding: 1em 0;
     background-color: var(--primary-bg-color);
     color: var(--font-color);
 }
@@ -260,9 +260,17 @@ footer {
         margin: 0 10px;
     }
 
+    nav ul li:first-child {
+        margin-left: 0;
+    }
+
     .about-content {
         flex-direction: column;
         text-align: left;
+    }
+
+    .about-content p {
+        padding-right: 0;
     }
 
     .portfolio-image {
