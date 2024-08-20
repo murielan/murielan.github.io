@@ -1,9 +1,9 @@
 :root {
     --primary-color: #5b8ce7;
-    --primary-color-hover: #7796d7;
     --primary-bg-color: #fffdfc;
     --secondary-bg-color: #12141d;
     --font-color: #333;
+    --font-color-hover: #808080;
 }
 
 body {
@@ -37,14 +37,14 @@ nav ul li {
 }
 
 nav ul li a {
+    padding: 5px 0;
     color: var(--font-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: var(--primary-color-hover);
-    margin-top: -5px;
+    color: var(--primary-color);
 }
 
 section {
@@ -72,13 +72,83 @@ footer {
     margin: 0 auto;
 }
 
-.about-content {
+#language-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+}
+
+.drop-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: var(--primary-bg-color);
+    color: var(--font-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.drop-btn .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.drop-btn p {
+    margin: 0;
+}
+
+.drop-btn:hover {
+    color: var(--font-color-hover);
+}
+
+.drop-btn:hover .icon {
+    opacity: 0.6;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-bg-color);
+    min-width: 7em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    color: var(--primary-color)
+}
+
+#language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#language-dropdown:hover .dropbtn {
+    background-color: #0056b3;
+}
+
+.about-element {
     display: flex;
     align-items: center;
     max-width: 100%;
 }
 
-.about-content p {
+.about-element p {
     padding-right: 1em;
 }
 
@@ -151,7 +221,7 @@ footer {
 }
 
 .project-link:hover {
-    background-color: var(--primary-color-hover);
+    background-color: var(--primary-color);
 }
 
 .tbd-message {
@@ -167,6 +237,7 @@ footer {
     width: 24px;
     height: auto;
     transition: opacity 0.3s;
+    opacity: 0.8;
 }
 
 .mail-link {
@@ -182,7 +253,7 @@ footer {
 }
 
 #contact a:hover .icon {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .footer-content {
@@ -209,11 +280,12 @@ footer {
     width: 24px;
     height: 24px;
     vertical-align: middle;
+    opacity: 0.8;
     transition: opacity 0.3s;
 }
 
 .footer-right img:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /***************** Animations *****************/
@@ -260,16 +332,31 @@ footer {
         margin: 0 10px;
     }
 
-    nav ul li:first-child {
+    nav ul li {
         margin-left: 0;
+        margin-right: 15px;
+        margin-top: 10px;
     }
 
-    .about-content {
+    nav ul li a {
+        padding: 16px 0;
+    }
+
+    #language-dropdown {
+        top: 5px;
+        right: 15px;
+    }
+
+    .drop-btn {
+        padding: 8px;
+    }
+
+    .about-element {
         flex-direction: column;
         text-align: left;
     }
 
-    .about-content p {
+    .about-element p {
         padding-right: 0;
     }
 

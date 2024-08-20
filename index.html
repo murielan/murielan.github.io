@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muriel Andermatt</title>
+    <title>Portfolio - Muriel Andermatt</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,23 +13,34 @@
 </head>
 <body>
 <header>
+    <div id="language-dropdown" class="dropdown">
+        <button class="drop-btn">
+            <img src="images/icons/language.png" alt="Language" class="icon">
+            <p id="language-btn">De</p>
+        </button>
+        <div class="dropdown-content">
+            <a href="#" onclick="setLanguage('en')">English</a>
+            <a href="#" onclick="setLanguage('de')">Deutsch</a>
+        </div>
+    </div>
     <div class="typewriter">
-        <h1>Hallo, ich bin <strong> Muriel Andermatt</strong>!</h1>
+        <h1 id="page-title">Hallo, ich bin <strong>Muriel Andermatt</strong>!</h1>
     </div>
     <nav>
         <ul>
-            <li><a href="#about">Über Mich</a></li>
-            <li><a href="#projects">Projekte</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#about"    id="nav-about"   >Über mich</a></li>
+            <li><a href="#projects" id="nav-tech"    >Technologien</a></li>
+            <li><a href="#projects" id="nav-projects">Projekte</a></li>
+            <li><a href="#contact"  id="nav-contact" >Kontakt</a></li>
         </ul>
     </nav>
 </header>
 
 <div id="content">
     <section id="about">
-        <h2>Über Mich</h2>
-        <div class="about-content">
-            <p>Ich stehe kurz vor dem Abschluss meines Bachelor-Studiums Informatik mit Profilierung in iCompetence und
+        <h2 id="about-title">Über Mich</h2>
+        <div class="about-element">
+            <p id="about-content">Ich stehe kurz vor dem Abschluss meines Bachelor-Studiums Informatik mit Profilierung in iCompetence und
                 habe umfangreiches Wissen in den Bereichen UI/UX-Design, Webentwicklung und Mobile Apps erworben. Meine
                 Leidenschaft liegt darin, benutzerfreundliche digitale Erlebnisse zu gestalten, die sowohl funktional
                 als auch ästhetisch ansprechend sind. Während meines Studiums habe ich mein Wissen in verschiedenen
@@ -39,24 +50,32 @@
         </div>
     </section>
 
+    <section id="technologies">
+        <h2 id="tech-title">Technologien</h2>
+        <div class="tech-element">
+            <p id="tech-content"></p>
+
+        </div>
+    </section>
+
     <section id="projects">
-        <h2>Projekte</h2>
-        <p class="tbd-message">Mehr Projekte werden bald aufgeschaltet.</p>
+        <h2 id="projects-title">Projekte</h2>
+        <p id="projects-tbd-message" class="tbd-message">Mehr Projekte werden bald aufgeschaltet.</p>
         <div class="project-cards">
             <div class="project-card">
                 <img src="images/projects/plAAAAnts.png" alt="Project PlAAAAnt" class="project-image">
                 <div class="project-content">
-                    <h3>Mobile App - PlAAAAnts</h3>
-                    <p>Die Android-App sendet Benachrichtigungen zur Bodenfeuchtigkeit deiner Pflanzen basierend auf den
+                    <h3 id="project1-title">Mobile App - PlAAAAnts</h3>
+                    <p id="project1-content">Die Android-App sendet Benachrichtigungen zur Bodenfeuchtigkeit deiner Pflanzen basierend auf den
                         Daten eines Sensors.</p>
-                    <a href="https://github.com/murielan/plAAAAnt" class="project-link" target="_blank">GitHub</a>
+                    <a href="https://github.com/murielan/plAAAAnt" id="project1-link" class="project-link" target="_blank">Auf GitHub ansehen</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Kontakt</h2>
+        <h2 id="contact-title">Kontakt</h2>
             <a href="mailto:muriel.andermatt@bluewin.ch" class="mail-link">
                 <img src="images/icons/mail.png" alt="Mail" class="icon">
                 muriel.andermatt@bluewin.ch
@@ -68,12 +87,15 @@
     <div class="footer-content">
         <div class="footer-left">&copy; 2024 Muriel Andermatt.</div>
         <div class="footer-right">
-            <a href="https://www.linkedin.com/in/muriel-andermatt/" target="_blank"><img src="images/icons/linkedIn.png"
-                                                                                         alt="LinkedIn"></a>
-            <a href="https://github.com/murielan" target="_blank"><img src="images/icons/github.png" alt="GitHub"></a>
-
+            <a href="https://www.linkedin.com/in/muriel-andermatt/" target="_blank">
+                <img src="images/icons/linkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/murielan" target="_blank">
+                <img src="images/icons/github.png" alt="GitHub">
+            </a>
         </div>
     </div>
 </footer>
+<script src="js/language.js"></script>
 </body>
 </html>
