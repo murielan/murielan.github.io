@@ -18,9 +18,9 @@
             <img src="images/icons/language.png" alt="Language" class="icon">
             <p id="language-btn">De</p>
         </button>
-        <div class="dropdown-content">
-            <a href="#" onclick="setLanguage('en')">English</a>
-            <a href="#" onclick="setLanguage('de')">Deutsch</a>
+        <div id="dropdown-content" class="dropdown-content">
+            <a href="#" onclick="setLanguage('en'); hideDropdown();">English</a>
+            <a href="#" onclick="setLanguage('de'); hideDropdown();">Deutsch</a>
         </div>
     </div>
     <div class="typewriter">

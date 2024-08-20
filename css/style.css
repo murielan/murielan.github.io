@@ -134,6 +134,10 @@ footer {
     color: var(--primary-color)
 }
 
+.dropdown-content a:checked .dropdown-content {
+    display: none;
+}
+
 #language-dropdown:hover .dropdown-content {
     display: block;
 }

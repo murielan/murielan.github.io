@@ -59,3 +59,30 @@ function setLanguage(lang) {
     document.getElementById('project1-link').textContent = content[lang].project1Link;
     document.getElementById('contact-title').textContent = content[lang].contactTitle;
 }
+
+function hideDropdown() {
+    document.getElementById('dropdown-content').style.display = 'none';
+}
+
+const dropdownButton = document.querySelector('.drop-btn');
+const dropdownContent = document.getElementById('dropdown-content');
+
+dropdownButton.addEventListener('click', function() {
+    if (dropdownContent.style.display === 'block') {
+        hideDropdown();
+    } else {
+        dropdownContent.style.display = 'block';
+    }
+});
+
+dropdownButton.addEventListener('mouseenter', function() {
+    dropdownContent.style.display = 'block';
+});
+
+dropdownButton.addEventListener('mouseleave', function() {
+    setTimeout(function() {
+        if (!dropdownContent.matches(':hover')) {
+            hideDropdown();
+        }
+    }, 300);
+});
