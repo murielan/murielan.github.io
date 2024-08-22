@@ -55,7 +55,7 @@ section {
 }
 
 p {
-    display:inline-block;
+    display: inline-block;
 }
 
 footer {
@@ -116,7 +116,7 @@ footer {
     right: 0;
     background-color: var(--primary-bg-color);
     min-width: 7em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 4px;
 }
@@ -163,7 +163,7 @@ footer {
 /* Tech skills */
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(125px, 2fr));
     gap: 20px;
     justify-items: center;
     align-items: center;
@@ -197,11 +197,10 @@ footer {
 }
 
 .project-card {
-    background-color: var(--secondary-bg-color);
     overflow: hidden;
+    background-color: #e8e9ef;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s;
     max-width: 300px;
     flex: 1 1 calc(33.333% - 20px);
     display: flex;
@@ -225,27 +224,42 @@ footer {
 .project-content h3 {
     margin: 10px 0;
     font-size: 1.2em;
-    color: #fff;
 }
 
 .project-content p {
     font-size: 0.9em;
-    color: #fff;
 }
 
 .project-link {
-    display: inline-block;
+    font-size: 0.9em;
+    display: inline-flex;
+    align-items: center;
     margin-top: 10px;
-    padding: 10px 15px;
-    background-color: var(--primary-color);
-    color: #fff;
+    padding: 10px 15px 10px 0;
+    color: var(--font-color);
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
 
+.project-link p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.project-link .icon {
+    height: 18px;
+    width: auto;
+    padding-right: 8px;
+    margin: 0;
+}
+
 .project-link:hover {
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.project-link:hover .icon {
+    opacity: 0.6;
 }
 
 .tbd-message {
@@ -306,6 +320,7 @@ footer {
     vertical-align: middle;
     opacity: 0.8;
     transition: opacity 0.3s;
+    padding: 5px 0;
 }
 
 .footer-right img:hover {
@@ -324,19 +339,26 @@ footer {
     border-right: .1em solid var(--primary-color);
     margin: 0 auto;
     white-space: nowrap;
-    animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--primary-color); }
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--primary-color);
+    }
 }
 
 
@@ -395,6 +417,9 @@ footer {
         overflow: visible;
         animation: none;
         border-right: none;
+    }
+    .tech-grid {
+        gap: 15px;
     }
 
     .project-card {
