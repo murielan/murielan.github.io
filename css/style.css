@@ -110,9 +110,8 @@ footer {
     opacity: 0.6;
 }
 
-
 .dropdown-content {
-    display: none;
+    display: none !important;
     position: absolute;
     right: 0;
     background-color: var(--primary-bg-color);
@@ -134,12 +133,8 @@ footer {
     color: var(--primary-color)
 }
 
-.dropdown-content a:checked .dropdown-content {
-    display: none;
-}
-
 #language-dropdown:hover .dropdown-content {
-    display: block;
+    display: block !important;
 }
 
 #language-dropdown:hover .dropbtn {
@@ -165,6 +160,33 @@ footer {
     margin-right: 0;
 }
 
+/* Tech skills */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.tech-element {
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.tech-element:hover {
+    transform: scale(1.1);
+}
+
+.tech-icon {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 /* Project Cards Layout */
 .project-cards {
     display: flex;
@@ -187,9 +209,7 @@ footer {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-
+    transform: scale(1.05);
 }
 
 .project-image {

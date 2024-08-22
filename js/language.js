@@ -60,29 +60,29 @@ function setLanguage(lang) {
     document.getElementById('contact-title').textContent = content[lang].contactTitle;
 }
 
-function hideDropdown() {
-    document.getElementById('dropdown-content').style.display = 'none';
-}
 
 const dropdownButton = document.querySelector('.drop-btn');
 const dropdownContent = document.getElementById('dropdown-content');
 
-dropdownButton.addEventListener('click', function() {
-    if (dropdownContent.style.display === 'block') {
-        hideDropdown();
-    } else {
-        dropdownContent.style.display = 'block';
-    }
-});
+function hideDropdown() {
+    dropdownContent.style.display = 'none';
+}
 
-dropdownButton.addEventListener('mouseenter', function() {
-    dropdownContent.style.display = 'block';
-});
+// dropdownButton.addEventListener('click', function() {
+//     if (dropdownContent.style.display === "none") {
+//         dropdownContent.style.display = 'block';
+//         console.log(dropdownContent);
+//     } else {
+//         console.log("oh no: " + dropdownContent.style.display);
+//         console.log(dropdownContent);
+//         hideDropdown();
+//     }
+// });
 
-dropdownButton.addEventListener('mouseleave', function() {
-    setTimeout(function() {
-        if (!dropdownContent.matches(':hover')) {
-            hideDropdown();
-        }
-    }, 300);
-});
+// dropdownButton.addEventListener('mouseover', function() {
+//     if (dropdownContent.style.display !== 'block') {
+//         dropdownContent.style.display = 'block';
+//     }
+// });
+
+
