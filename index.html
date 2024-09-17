@@ -14,13 +14,13 @@
 <body>
 <header>
     <div id="language-dropdown" class="dropdown">
-        <button class="drop-btn">
+        <button id="drop-btn">
             <img src="images/icons/language.png" alt="Language" class="icon">
-            <p id="language-btn">De</p>
+            <p id="language-btn">DE</p>
         </button>
         <div id="dropdown-content" class="dropdown-content">
-            <a href="#" onclick="setLanguage('en'); hideDropdown();">English</a>
-            <a href="#" onclick="setLanguage('de'); hideDropdown();">Deutsch</a>
+            <a href="#" onclick="setLanguage('en')" class="hideDropdown">English</a>
+            <a href="#" onclick="setLanguage('de')" class="hideDropdown">Deutsch</a>
         </div>
     </div>
     <div class="typewriter">
@@ -29,7 +29,7 @@
     <nav>
         <ul>
             <li><a href="#about"    id="nav-about"   >Über mich</a></li>
-            <li><a href="#projects" id="nav-tech"    >Technologien</a></li>
+            <li><a href="#technologies" id="nav-tech">Technologien</a></li>
             <li><a href="#projects" id="nav-projects">Projekte</a></li>
             <li><a href="#contact"  id="nav-contact" >Kontakt</a></li>
         </ul>

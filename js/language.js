@@ -5,7 +5,7 @@ const content = {
         navTech: "Technologies",
         navProjects: "Projects",
         navContact: "Contact",
-        languageBtn: "En",
+        languageBtn: "EN",
         aboutTitle: "About Me",
         aboutContent: "I am about to complete my Bachelor's degree in Computer Science with a specialisation in iCompetence and have acquired extensive knowledge in the areas of UI/UX design, web development and mobile apps. My passion lies in designing user-friendly digital experiences that are both functional and aesthetically pleasing. During my studies, I have successfully applied my knowledge in various projects and am now looking forward to applying and deepening it in practice.",
         techTitle: "Technologies",
@@ -22,7 +22,7 @@ const content = {
         navTech: "Technologien",
         navProjects: "Projekte",
         navContact: "Kontakt",
-        languageBtn: "De",
+        languageBtn: "DE",
         aboutTitle: "Über mich",
         aboutContent: "Ich stehe kurz vor dem Abschluss meines Bachelor-Studiums Informatik mit Profilierung in iCompetence und habe umfangreiches Wissen in den Bereichen UI/UX-Design, Webentwicklung und Mobile Apps erworben. Meine Leidenschaft liegt darin, benutzerfreundliche digitale Erlebnisse zu gestalten, die sowohl funktional als auch ästhetisch ansprechend sind. Während meines Studiums habe ich mein Wissen in verschiedenen Projekten erfolgreich eingesetzt und freue mich darauf, es nun in der Praxis anzuwenden und zu vertiefen.",
         techTitle: "Technologien",
@@ -59,30 +59,29 @@ function setLanguage(lang) {
     document.getElementById('project1-link').textContent = content[lang].project1Link;
     document.getElementById('contact-title').textContent = content[lang].contactTitle;
 }
-
-
-const dropdownButton = document.querySelector('.drop-btn');
+const dropBtn = document.getElementById('drop-btn');
+const wholeEl = document.getElementById('language-dropdown');
 const dropdownContent = document.getElementById('dropdown-content');
+const languageEls = document.getElementsByClassName('hideDropdown');
 
-function hideDropdown() {
-    dropdownContent.style.display = 'none';
-}
+dropBtn.addEventListener('click', () => {
+    dropdownContent.style.display = "block";
+});
 
-// dropdownButton.addEventListener('click', function() {
-//     if (dropdownContent.style.display === "none") {
-//         dropdownContent.style.display = 'block';
-//         console.log(dropdownContent);
-//     } else {
-//         console.log("oh no: " + dropdownContent.style.display);
-//         console.log(dropdownContent);
-//         hideDropdown();
-//     }
-// });
+dropBtn.addEventListener('mouseover', () => {
+    dropdownContent.style.display = "block";
+});
 
-// dropdownButton.addEventListener('mouseover', function() {
-//     if (dropdownContent.style.display !== 'block') {
-//         dropdownContent.style.display = 'block';
-//     }
-// });
+wholeEl.addEventListener('mouseover', () => {
+    dropdownContent.style.display = "block";
+});
 
+wholeEl.addEventListener('mouseout', () => {
+    dropdownContent.style.display = "none";
+});
 
+Array.from(languageEls).forEach(el => {
+    el.addEventListener('click', () => {
+        dropdownContent.style.display = 'none';
+    });
+});
