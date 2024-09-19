@@ -177,7 +177,7 @@ footer {
 
 .tech-icon {
     max-width: 50px;
-    max-height: 50px;
+    max-height: 25px;
     width: auto;
     height: auto;
     margin-bottom: 10px;
@@ -204,7 +204,7 @@ footer {
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .project-image {
@@ -217,6 +217,30 @@ footer {
     padding: 15px;
 }
 
+
+.tech-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 5px;
+}
+
+.tech-button {
+    background-color: var(--secondary-bg-color);
+    opacity: 0.8;
+    border-radius: 8px;
+    color: white;
+    padding: 3px 10px;
+    font-size: 0.7em;
+    display: inline-block;
+    cursor: default;
+    transition: transform 0.3s;
+}
+
+.tech-button:hover {
+    transform: scale(1.05);
+}
+
 .project-content h3 {
     margin: 10px 0;
     font-size: 1.2em;
@@ -227,7 +251,7 @@ footer {
 }
 
 .project-link {
-    font-size: 0.9em;
+    font-size: 1em;
     display: inline-flex;
     align-items: center;
     margin-top: 10px;
@@ -235,7 +259,7 @@ footer {
     color: var(--font-color);
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;;
 }
 
 .project-link p {
@@ -247,6 +271,7 @@ footer {
     height: 18px;
     width: auto;
     padding-right: 8px;
+    padding-left: 4px;
     margin: 0;
 }
 
