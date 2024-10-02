@@ -196,6 +196,7 @@ footer {
 
 .project-card {
     overflow: hidden;
+    background-color: #f3f3f5;
     color: var(--font-color);
     border-radius: 4px;
     transition: transform 0.3s;
