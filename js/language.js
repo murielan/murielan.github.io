@@ -7,13 +7,16 @@ const content = {
         navContact: "Contact",
         languageBtn: "EN",
         aboutTitle: "About Me",
-        aboutContent: "I am about to complete my Bachelor's degree in Computer Science with a specialisation in iCompetence and have acquired extensive knowledge in the areas of UI/UX design, web development and mobile apps. My passion lies in designing user-friendly digital experiences that are both functional and aesthetically pleasing. During my studies, I have successfully applied my knowledge in various projects and am now looking forward to applying and deepening it in practice.",
+        aboutContent: "I am a recent Computer Science graduate with a specialization in Design and Management (iCompetence) and possess extensive knowledge in UI/UX design, web development, and mobile app development. My passion for creating user-friendly, functional, and aesthetically pleasing digital solutions has driven me throughout my studies. I have successfully demonstrated my skills in numerous projects and am now eager to apply and further expand my knowledge in a professional setting.",
         techTitle: "Technologies",
         projectsTitle: "My Projects",
         projectsContent: "More projects will be uploaded soon.",
         project1Title: "Mobile App - PlAAAAnts",
         project1Content: "The Android app sends notifications about the soil moisture of your plants based on data from a sensor.",
         project1Link: "View on GitHub",
+        project2Title: "Webshop - Winterhart",
+        project2Content: "Development of the webshop for Winterhart, a friend's clothing brand. The shop is currently under construction and will be released soon.",
+        project2Link: "Live Webshop",
         contactTitle: "Contact",
     },
     de: {
@@ -24,13 +27,16 @@ const content = {
         navContact: "Kontakt",
         languageBtn: "DE",
         aboutTitle: "Über mich",
-        aboutContent: "Ich stehe kurz vor dem Abschluss meines Bachelor-Studiums Informatik mit Profilierung in iCompetence und habe umfangreiches Wissen in den Bereichen UI/UX-Design, Webentwicklung und Mobile Apps erworben. Meine Leidenschaft liegt darin, benutzerfreundliche digitale Erlebnisse zu gestalten, die sowohl funktional als auch ästhetisch ansprechend sind. Während meines Studiums habe ich mein Wissen in verschiedenen Projekten erfolgreich eingesetzt und freue mich darauf, es nun in der Praxis anzuwenden und zu vertiefen.",
+        aboutContent: "Ich bin eine frischgebackene Informatik-Absolventin mit einer Vertiefung in Design und Management (iCompetence) und verfüge über umfangreiches Wissen in den Bereichen UI/UX-Design, Webentwicklung und der Entwicklung mobiler Anwendungen. Meine Leidenschaft für das Entwerfen benutzerfreundlicher, funktionaler und ästhetisch ansprechender digitaler Lösungen hat mich durch Studium getrieben. In zahlreichen Projekten konnte ich meine Fähigkeiten erfolgreich unter Beweis stellen. Jetzt bin ich bereit, mein Wissen in einer professionellen Umgebung weiter einzusetzen und zu erweitern.",
         techTitle: "Technologien",
         projectsTitle: "Meine Projekte",
         projectsContent: "Mehr Projekte werden bald aufgeschaltet.",
         project1Title: "Mobile App - PlAAAAnts",
         project1Content: "Die Android-App sendet Benachrichtigungen zur Bodenfeuchtigkeit deiner Pflanzen basierend auf den Daten eines Sensors.",
         project1Link: "Auf GitHub ansehen",
+        project2Title: "Webshop - Winterhart",
+        project2Content: "Entwicklung des Webshops für Winterhart, die Kleidermarke eines Kollegen. Der Shop befindet sich derzeit im Aufbau und wird bald live geschaltet.",
+        project2Link: "Live Webseite ansehen",
         contactTitle: "Kontakt",
     }
 };
@@ -57,6 +63,9 @@ function setLanguage(lang) {
     document.getElementById('project1-title').textContent = content[lang].project1Title;
     document.getElementById('project1-content').textContent = content[lang].project1Content;
     document.getElementById('project1-link').textContent = content[lang].project1Link;
+    document.getElementById('project2-title').textContent = content[lang].project2Title;
+    document.getElementById('project2-content').textContent = content[lang].project2Content;
+    document.getElementById('project2-link').textContent = content[lang].project2Link;
     document.getElementById('contact-title').textContent = content[lang].contactTitle;
 }
 const dropBtn = document.getElementById('drop-btn');
