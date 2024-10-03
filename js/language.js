@@ -27,7 +27,7 @@ const content = {
         navContact: "Kontakt",
         languageBtn: "DE",
         aboutTitle: "Über mich",
-        aboutContent: "Ich bin eine frischgebackene Informatik-Absolventin mit einer Vertiefung in Design und Management (iCompetence) und verfüge über umfangreiches Wissen in den Bereichen UI/UX-Design, Webentwicklung und der Entwicklung mobiler Anwendungen. Meine Leidenschaft für das Entwerfen benutzerfreundlicher, funktionaler und ästhetisch ansprechender digitaler Lösungen hat mich durch Studium getrieben. In zahlreichen Projekten konnte ich meine Fähigkeiten erfolgreich unter Beweis stellen. Jetzt bin ich bereit, mein Wissen in einer professionellen Umgebung weiter einzusetzen und zu erweitern.",
+        aboutContent: "Ich bin eine frischgebackene Informatik-Absolventin mit Vertiefung in Design und Management (iCompetence) und verfüge über umfangreiches Wissen in den Bereichen UI/UX-Design, Webentwicklung und der Entwicklung mobiler Anwendungen. Meine Leidenschaft für das Entwerfen benutzerfreundlicher, funktionaler und ästhetisch ansprechender digitaler Lösungen hat mich durch Studium getrieben. In zahlreichen Projekten konnte ich meine Fähigkeiten erfolgreich unter Beweis stellen. Jetzt bin ich bereit, mein Wissen in einer professionellen Umgebung weiter einzusetzen und zu erweitern.",
         techTitle: "Technologien",
         projectsTitle: "Meine Projekte",
         projectsContent: "Mehr Projekte werden bald aufgeschaltet.",
