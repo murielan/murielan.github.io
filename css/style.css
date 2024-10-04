@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #5b8ce7;
+    --primary-color: #6190e7;
     --primary-bg-color: #fffdfc;
-    --secondary-bg-color: #12141d;
+    --secondary-bg-color: #9d72b9;
     --font-color: #333;
     --font-color-hover: #808080;
 }
@@ -10,7 +10,8 @@ body {
     font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-bg-color);
+    background: rgb(174, 153, 255);
+    background: radial-gradient(circle, rgb(105, 172, 227) 0%, rgb(255, 117, 143) 100%);
 }
 
 header {
@@ -126,11 +127,12 @@ footer {
 }
 
 .dropdown-content a {
-    color: black;
+    color: var(--font-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-size: 14px;
+    transition: color 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -154,7 +156,12 @@ footer {
     margin-top: -4em;
     margin-left: auto;
     margin-right: 0;
-    border-radius: 4px;
+    border-radius: 2px;
+    transition: transform 0.3s;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.03);
 }
 
 /* Tech skills */
@@ -186,22 +193,23 @@ footer {
 
 /* Project Cards Layout */
 .project-cards {
+    margin: 20px 3em;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
-    margin-bottom: 1em;
 }
 
 .project-card {
     overflow: hidden;
+    background-color: var(--primary-bg-color);
     color: var(--font-color);
-    border-radius: 4px;
-    max-width: 300px;
+    max-width: 350px;
     flex: 1 1 calc(33.333% - 20px);
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 2px;
 }
 
 .project-image {
@@ -454,6 +462,10 @@ footer {
     }
     .tech-grid {
         gap: 15px;
+    }
+
+    .project-cards {
+        margin: 15px;
     }
 
     .project-card {
