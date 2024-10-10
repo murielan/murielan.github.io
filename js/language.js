@@ -10,7 +10,7 @@ const content = {
         aboutContent: "I am a recent Computer Science graduate with a specialization in Design and Management (iCompetence) and possess extensive knowledge in UI/UX design, web development, and mobile app development. My passion for creating user-friendly, functional, and aesthetically pleasing digital solutions has driven me throughout my studies. I have successfully demonstrated my skills in numerous projects and am now eager to apply and further expand my knowledge in a professional setting.",
         techTitle: "Technologies",
         projectsTitle: "My Projects",
-        projectsContent: "A selection of my current projects.",
+        projectsContent: "A selection of my current projects:",
         project1Title: "Mobile App - PlAAAAnts",
         project1Content: "The Android app sends notifications about the soil moisture of your plants based on data from a sensor.",
         project1Link: "View on GitHub",
@@ -30,7 +30,7 @@ const content = {
         aboutContent: "Ich bin eine frischgebackene Informatik-Absolventin mit Vertiefung in Design und Management (iCompetence) und verfüge über umfangreiches Wissen in den Bereichen UI/UX-Design, Webentwicklung und der Entwicklung mobiler Anwendungen. Meine Leidenschaft für das Entwerfen benutzerfreundlicher, funktionaler und ästhetisch ansprechender digitaler Lösungen hat mich durch Studium getrieben. In zahlreichen Projekten konnte ich meine Fähigkeiten erfolgreich unter Beweis stellen. Jetzt bin ich bereit, mein Wissen in einer professionellen Umgebung weiter einzusetzen und zu erweitern.",
         techTitle: "Technologien",
         projectsTitle: "Meine Projekte",
-        projectsContent: "Eine Auswahl meiner aktuellen Projekte.",
+        projectsContent: "Eine Auswahl meiner aktuellen Projekte:",
         project1Title: "Mobile App - PlAAAAnts",
         project1Content: "Die Android-App sendet Benachrichtigungen zur Bodenfeuchtigkeit deiner Pflanzen basierend auf den Daten eines Sensors.",
         project1Link: "Auf GitHub ansehen",
@@ -94,3 +94,7 @@ Array.from(languageEls).forEach(el => {
         dropdownContent.style.display = 'none';
     });
 });
+
+function toggleImageSize() {
+    this.size
+}

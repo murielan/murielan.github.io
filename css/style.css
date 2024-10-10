@@ -1,7 +1,7 @@
 :root {
     --primary-color: #6190e7;
     --primary-bg-color: #fffdfc;
-    --secondary-bg-color: #9d72b9;
+    --secondary-bg-color: #8d749d;
     --font-color: #333;
     --font-color-hover: #808080;
 }
@@ -241,7 +241,7 @@ footer {
     border-radius: 8px;
     color: var(--primary-bg-color);
     padding: 3px 10px;
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-weight: 500;
     display: inline-block;
     cursor: default;
@@ -253,7 +253,7 @@ footer {
 }
 
 .project-content h3 {
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 1.2em;
 }
 
