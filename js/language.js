@@ -15,7 +15,7 @@ const content = {
         project1Content: "The Android app sends notifications about the soil moisture of your plants based on data from a sensor.",
         project1Link: "View on GitHub",
         project2Title: "Webshop - Winterhart",
-        project2Content: "Development of the webshop for Winterhart, a friend's clothing brand. The shop is currently under construction and will be released soon.",
+        project2Content: "Development of the webshop for the clothing brand Winterhart using Wordpress.",
         project2Link: "Live Webshop",
         contactTitle: "Contact",
     },
@@ -35,7 +35,7 @@ const content = {
         project1Content: "Die Android-App sendet Benachrichtigungen zur Bodenfeuchtigkeit deiner Pflanzen basierend auf den Daten eines Sensors.",
         project1Link: "Auf GitHub ansehen",
         project2Title: "Webshop - Winterhart",
-        project2Content: "Entwicklung des Webshops für Winterhart, die Kleidermarke eines Kollegen. Der Shop befindet sich derzeit im Aufbau und wird bald live geschaltet.",
+        project2Content: "Entwicklung des Webshops für die Kleidermarke Winterhart unter Verwendung von Wordpress.",
         project2Link: "Live Webseite ansehen",
         contactTitle: "Kontakt",
     }
