@@ -26,15 +26,22 @@
     <div class="typewriter">
         <h1 id="page-title">Hallo, ich bin <strong>Muriel Andermatt</strong>!</h1>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#about" id="nav-about">Über mich</a></li>
-            <li><a href="#technologies" id="nav-tech">Technologien</a></li>
-            <li><a href="#projects" id="nav-projects">Projekte</a></li>
-            <li><a href="#contact" id="nav-contact">Kontakt</a></li>
-        </ul>
-    </nav>
 </header>
+<nav>
+    <div class="nav-header">
+        <a href="#" id="nav-sticky-name"><strong>Muriel Andermatt</strong></a>
+        <button id="hamburger-menu" aria-label="Toggle Navigation">
+            ☰
+        </button>
+    </div>
+    <ul id="nav-menu">
+        <li><a href="#about" id="nav-about">Über mich</a></li>
+        <li><a href="#technologies" id="nav-tech">Technologien</a></li>
+        <li><a href="#projects" id="nav-projects">Projekte</a></li>
+        <li><a href="#contact" id="nav-contact">Kontakt</a></li>
+    </ul>
+</nav>
+
 
 <div id="content">
     <section id="about">
@@ -113,29 +120,31 @@
         <div class="project-card">
 
             <div class="project-content">
-                <h3 id="project2-title">Webshop - Winterhart</h3>
                 <div class="project-image">
                     <img src="images/projects/winterhartdesign.png" alt="Project Winterhart" class="project-image-1"
                          onclick="toggleImageSize()">
                     <img src="images/projects/winterhartdesign2.png" alt="Project Winterhart"
                          class="project-image-2" onclick="toggleImageSize()">
                 </div>
-                <p id="project2-content">Entwicklung des Webshops für die Kleidermarke Winterhart unter Verwendung von Wordpress.</p>
+                <h3 id="project2-title">Webshop - Winterhart</h3>
+                <p id="project2-content">Entwicklung des Webshops für die Kleidermarke Winterhart unter Verwendung von
+                    Wordpress.</p>
                 <div class="tech-buttons">
                     <div class="tech-button">Wordpress</div>
                     <div class="tech-button">WooCommerce</div>
+                    <div class="tech-button">PHP</div>
                     <div class="tech-button">CSS</div>
                 </div>
                 <a href="https://winterhartdesign.ch/" class="project-link" target="_blank">
-                    <img src="images/icons/link.png" alt="Link" class="icon">
+                    <img src="images/icons/link_white.png" alt="Link" class="icon">
                     <p id="project2-link">Webshop ansehen</p>
                 </a>
             </div>
         </div>
         <div class="project-card">
             <div class="project-content">
-                <h3 id="project1-title">Mobile App - PlAAAAnts</h3>
                 <img src="images/projects/plAAAAnts.png" alt="Project PlAAAAnt" class="project-image">
+                <h3 id="project1-title">Mobile App - PlAAAAnts</h3>
                 <p id="project1-content">Die Android-App sendet Benachrichtigungen zur Bodenfeuchtigkeit deiner
                     Pflanzen basierend auf den
                     Daten eines Sensors.</p>
@@ -146,7 +155,7 @@
                     <div class="tech-button">Arduino</div>
                 </div>
                 <a href="https://github.com/murielan/plAAAAnt" class="project-link" target="_blank">
-                    <img src="images/icons/link.png" alt="Link" class="icon">
+                    <img src="images/icons/github_white.png" alt="Link" class="icon">
                     <p id="project1-link">Auf GitHub ansehen</p>
                 </a>
             </div>
@@ -184,5 +193,6 @@
     </div>
 </footer>
 <script src="js/language.js"></script>
+<script src="js/navigation.js"></script>
 </body>
 </html>
