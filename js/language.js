@@ -17,6 +17,9 @@ const content = {
         project2Title: "Webshop - Winterhart",
         project2Content: "Development of the webshop for the clothing brand Winterhart using Wordpress.",
         project2Link: "Live Webshop",
+        project3Title: "Website - Visita",
+        project3Content: "Redesign of the Visita Treuhand AG website with its own content management system (CMS).",
+        project3Link: "Live Website",
         contactTitle: "Contact",
     },
     de: {
@@ -36,7 +39,10 @@ const content = {
         project1Link: "Auf GitHub ansehen",
         project2Title: "Webshop - Winterhart",
         project2Content: "Entwicklung des Webshops für die Kleidermarke Winterhart unter Verwendung von Wordpress.",
-        project2Link: "Live Webseite ansehen",
+        project2Link: "Webseite ansehen",
+        project3Title: "Webseite - Visita",
+        project3Content: "Neugestaltung von der Visita Treuhand AG Webseite mit eigenem Content-Management-System (CMS).",
+        project3Link: "Webseite ansehen",
         contactTitle: "Kontakt",
     }
 };
@@ -59,13 +65,15 @@ function setLanguage(lang) {
     document.getElementById('about-content').textContent = content[lang].aboutContent;
     document.getElementById('tech-title').textContent = content[lang].techTitle;
     document.getElementById('projects-title').textContent = content[lang].projectsTitle;
-    document.getElementById('projects-tbd-message').textContent = content[lang].projectsContent;
     document.getElementById('project1-title').textContent = content[lang].project1Title;
     document.getElementById('project1-content').textContent = content[lang].project1Content;
     document.getElementById('project1-link').textContent = content[lang].project1Link;
     document.getElementById('project2-title').textContent = content[lang].project2Title;
     document.getElementById('project2-content').textContent = content[lang].project2Content;
     document.getElementById('project2-link').textContent = content[lang].project2Link;
+    document.getElementById('project3-title').textContent = content[lang].project3Title;
+    document.getElementById('project3-content').textContent = content[lang].project3Content;
+    document.getElementById('project3-link').textContent = content[lang].project3Link;
     document.getElementById('contact-title').textContent = content[lang].contactTitle;
 }
 const dropBtn = document.getElementById('drop-btn');

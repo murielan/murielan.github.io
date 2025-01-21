@@ -1,7 +1,7 @@
 :root {
     --primary-color: #6190e7;
     --primary-bg-color: #fffdfc;
-    --secondary-bg-color: #9473a4;
+    --secondary-bg-color: #4671c4;
     --font-color: #333;
     --font-color-hover: #737b8d;
 }
@@ -249,7 +249,7 @@ footer {
     overflow: hidden;
     background-color: var(--primary-bg-color);
     color: var(--font-color);
-    max-width: 350px;
+    max-width: 360px;
     flex: 1 1 calc(33.333% - 20px);
     display: flex;
     flex-direction: column;
@@ -305,6 +305,7 @@ footer {
     flex-wrap: wrap;
     justify-content: left;
     gap: 5px;
+    padding-bottom: 5px;
 }
 
 .tech-button {
@@ -324,7 +325,7 @@ footer {
 }
 
 .project-content h3 {
-    margin: 15px 0;
+    margin: 15px 0 0 0;
     padding-top: 1em;
     font-size: 1.2em;
 }
